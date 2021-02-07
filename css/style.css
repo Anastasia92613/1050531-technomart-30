@@ -77,6 +77,21 @@ img {
     column-gap: 120px;
 }
 
+.description-catalog {
+    grid-column: 1/-1;
+}
+
+.page-catalog {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    align-content: start;
+}
+
+.catalog {
+    margin-top: 28px;
+    margin-left: 20px;
+}
+
 
 /*Header*/
 
@@ -128,6 +143,7 @@ header {
 }
 
 .catalog-title {
+    grid-column: 1/-1;
     background-color: var(--light-grayish-blue);
 }
 
@@ -175,6 +191,10 @@ header {
 
 .sortting {
     background-color: var(--light-grayish-orange);
+    width: 700px;
+    height: 38px;
+    grid-column: 2/3;
+    grid-template-rows: ;
 }
 
 .sorting-list {
@@ -331,6 +351,11 @@ header {
 }
 
 .personal-account {
+    font-family: Cuprum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
     color: var(--desaturated-blue);
 }
 
@@ -678,8 +703,15 @@ header {
 
 /*  bread crumbs*/
 
+.bread-crumbs {
+    grid-column: 1/-1;
+    margin-bottom: 20px;
+}
+
 .bread-crumbs-list {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .bread-crumbs-item {
