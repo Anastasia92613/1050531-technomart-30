@@ -7,8 +7,8 @@
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/icon/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/icon/favicon.png">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,700;1,100&display=swap">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
@@ -19,22 +19,25 @@
             <div class="wrapper-upper-panel">
                 <div class="header-search-wrapper">
                     <a class="header-logo">
-                        <img src="img/logo/logo-technomart.png" width="108" height="18" alt="Логотип магазина 'ТЕХНОМАРТ'">
+                        <img class="logo-logo" src="img/icon/Object.svg" width="220" height="47" alt="Логотип магазина 'ТЕХНОМАРТ'">
                     </a>
-                    <!-- <img src="img/icon/search.svg" width="17" height="17" alt=""> -->
-                    <input class="search-upper" type="search" name="search" placeholder="Поиск:">
+                    <div class="search">
+                        <input class="search-upper" type="search" name="search" id="search" placeholder="Поиск:">
+                        <label class="icon-search" for="search"><img src="img/icon/search.svg" width="17" height="17" alt=""></label>
+                    </div>
+
                 </div>
                 <div class="list-order-wrapper">
                     <ul class="list-order">
+                        <li class=" order-item">
+                            <a class="bookmark-header" href="">Закладки: 0</a>
+                        </li>
                         <li class="order-item">
-                            <!-- <img src="img/icon/bookmark.svg" width="14" height="16" alt=""> -->
-                            <a href="">Закладки: 0</a>
+                            <a class="cart" href="">Корзина: 0</a>
                         </li>
-                        <li class="order-ite cart">
-                            <!-- <img src="img/icon/cart.svg" width="15" height="15" alt=""> -->
-                            <a href="">Корзина: 0</a>
+                        <li class="order-item place-order">
+                            <a href="">Оформить заказ</a>
                         </li>
-                        <li class="place-order"><a href="">Оформить заказ</a></li>
                     </ul>
                 </div>
             </div>
@@ -44,19 +47,19 @@
                 <div class="descrition-text">
                     <p>Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</p>
                 </div>
-                <div>
+                <div class="wrapper-contact">
                     <div class="header-phone">
-                        <img src="img/icon/phone.png" width="19" height="19" alt="">
+                        <!-- <img src="img/icon/phone.png" width="19" height="19" alt=""> -->
                         <a href="tel:+78125550555">+7 (812) 555-05-55</a>
-                    </div class="wrapper-contact">
+                    </div>
                     <div class="header-adress">
                         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                     </div>
                 </div>
                 <div class="authorization">
-                    <img src="img/icon/login.png" width="20" height="17" alt="">
-                    <a href="">Войти</a>
-                    <a href="">Регистрация</a>
+                    <!-- <img src="img/icon/login.png" width="20" height="17" alt=""> -->
+                    <a class="enter" href="">Войти</a>
+                    <a class="registration" href="">Регистрация</a>
                 </div>
             </div>
             <nav class="header-nav">
@@ -73,20 +76,21 @@
         </div>
     </header>
     <main class="container">
-        <h1>Магазин строительных материалов и инструментов Техномарт</h1>
+        <h1 class="visually-hidden">Магазин строительных материалов и инструментов Техномарт</h1>
         <section class="promo-block">
-            <h2>Промо-блок</h2>
+            <h2 class="visually-hidden">Промо-блок</h2>
             <ul class="promo-list">
                 <li class="promo-material">
                     <h3 class="promo-title">Материалы</h3>
-                    <img src="img/icon/new.svg" width="70" height="70" alt="Новое">
-                    <img src="img/icon/icon1.svg" width="44" height="65" alt="">
-                    <a class="promo-button" href="">на любой вкус</a>
+                    <img class="new" src="img/icon/new.svg" width="70" height="70" alt="Новое">
+                    <img class="icon-material" src="img/icon/icon1.svg" width="44" height="65" alt="">
+                    <a class="promo-button button-material" href="">на любой вкус</a>
+
                 </li>
                 <li class="promo-instrument">
                     <h3 class="promo-title">Инструмент</h3>
-                    <img src="img/icon/icon2.svg" width="75" height="61" alt="">
-                    <a class="promo-button" href="">на все случаи жизни</a>
+                    <img class="icon-instrument" src="img/icon/icon2.svg" width="75" height="61" alt="">
+                    <a class="promo-button button-instrument" href="">на все случаи</a>
                 </li>
                 <li class="promo-technic">
                     <h3 class="promo-title">Техника</h3>
@@ -241,7 +245,7 @@
         </section>
         <div class="wrapper-about-company">
             <section>
-                <h2>О компании</h2>
+                <h2 class="visually-hidden">О компании</h2>
                 <h3 class="title main-title">КОМПАНИЯ «Техномарт»</h3>
                 <div class="description">
                     <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для<br> ремонта и строительства не оставит равнодушными любителей сэкономить на <br> гастарбайтерах.
@@ -271,7 +275,7 @@
     <footer class="footer">
         <div class="bottom-nav">
             <section class="section-bottom-nav">
-                <!-- <h2>Нижнее меню</h2> -->
+                <h2 class="visually-hidden">Нижнее меню</h2>
                 <a class="header-logo">
                     <img src="img/logo/logo-technomart.png" width="108" height="18" alt="Логотип магазина 'ТЕХНОМАРТ'">
                 </a>
@@ -296,7 +300,7 @@
                 </nav>
             </section>
             <section class="section-promo-nav">
-                <!-- <h2>Дополнительное меню</h2> -->
+                <h2 class="visually-hidden">Дополнительное меню</h2>
                 <div>
                     <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                     <p>+7 (812) 555-05-55</p>

@@ -26,9 +26,9 @@
                 </div>
                 <div class="list-order-wrapper">
                     <ul class="list-order">
-                        <li class="order-item"><a href="">Закладки: 0</a></li>
-                        <li class="order-item"><a href="">Корзина: 10</a></li>
-                        <li class="place-order"><a href="">Оформить заказ</a></li>
+                        <li class="order-item bookmark-header"><a href="">Закладки: 0</a></li>
+                        <li class="order-item cart"><a href="">Корзина: 10</a></li>
+                        <li class="order-item place-order"><a href="">Оформить заказ</a></li>
                     </ul>
                 </div>
             </div>
@@ -40,7 +40,7 @@
                 </div>
                 <div>
                     <div class="header-phone">
-                        <img src="img/icon/phone.png" width="19" height="19" alt="">
+                        <!-- <img src="img/icon/phone.png" width="19" height="19" alt=""> -->
                         <a href="tel:+78125550555">+7 (812) 555-05-55</a>
                     </div>
                     <div class="header-adress">
@@ -83,7 +83,9 @@
         </div>
 
         <section class="filters">
-            <h2 class="titile-filter">Фильтр:</h2>
+            <div class="wrapper-titile-filter">
+                <h2 class="titile-filter">Фильтр:</h2>
+            </div>
             <form class="filter" method="GET" action="https://echo.htmlacademy.ru">
                 <fieldset class="filter-price">
                     <legend class="name-filter">Цена:</legend>
@@ -134,9 +136,9 @@
             </form>
         </section>
         <div class="grid-wrapper">
-            <section class="sortting">
-                <h2 class="title-sorting">Сортировка:</h2>
-                <ul class="sorting-list">
+            <section class="sortting ">
+                <h2 class="title-sorting ">Сортировка:</h2>
+                <ul class="sorting-list ">
                     <li class="sorting-item">
                         <a href="">По цене</a>
                     </li>
@@ -150,12 +152,12 @@
             </section>
 
             <section class="catalog">
-                <h2>Список товаров</h2>
+                <h2 class="visually-hidden">Список товаров</h2>
 
                 <ul class="catalog-product-list">
                     <li class="catalog-product-item">
                         <section>
-                            <h3>Карточка товара</h3>
+                            <h3 class="visually-hidden">Карточка товара</h3>
                             <a href="">
                                 <h3 class="product-name">Перфоратор BOSCH BFG 6000</h3>
                                 <img src="img/products/bosh6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
@@ -165,7 +167,7 @@
                             </a>
                         </section>
                         <section>
-                            <h3>Выбор товара</h3>
+                            <h3 class="visually-hidden">Выбор товара</h3>
                             <button class="buy" type="button">Купить</button>
                             <button class="bookmark" type="button">В закладки</button>
                             <h3 class="product-name">Перфоратор BOSCH BFG 6000</h3>
@@ -175,7 +177,7 @@
                     </li>
                     <li class="catalog-product-item">
                         <section>
-                            <h3>Карточка товара</h3>
+                            <h3 class="visually-hidden">Карточка товара</h3>
                             <a href="">
                                 <h3 class="product-name">Перфоратор BOSCH BFG 6000</h3>
                                 <img src="img/products/bosh6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
@@ -185,7 +187,7 @@
                             </a>
                         </section>
                         <section>
-                            <h3>Выбор товара</h3>
+                            <h3 class="visually-hidden">Выбор товара</h3>
                             <button class="buy" type="button">Купить</button>
                             <button class="bookmark" type="button">В закладки</button>
                             <h3 class="product-name">Перфоратор BOSCH BFG 6000</h3>
@@ -195,7 +197,7 @@
                     </li>
                     <li class="catalog-product-item">
                         <section>
-                            <h3>Карточка товара</h3>
+                            <h3 class="visually-hidden">Карточка товара</h3>
                             <a href="">
                                 <h3 class="product-name">Перфоратор BOSCH BFG 6000</h3>
                                 <img src="img/products/bosh6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
@@ -205,7 +207,7 @@
                             </a>
                         </section>
                         <section>
-                            <h3>Выбор товара</h3>
+                            <h3 class="visually-hidden">Выбор товара</h3>
                             <button class="buy" type="button">Купить</button>
                             <button class="bookmark" type="button">В закладки</button>
                             <h3>Перфоратор BOSCH BFG 6000</h3>
@@ -215,7 +217,7 @@
                     </li>
                     <li class="catalog-product-item">
                         <section>
-                            <h3>Карточка товара</h3>
+                            <h3 class="visually-hidden">Карточка товара</h3>
                             <a href="">
                                 <h3 class="product-name">Перфоратор BOSCH BFG 3000</h3>
                                 <img src="img/products/bosh3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
@@ -225,7 +227,7 @@
                             </a>
                         </section>
                         <section>
-                            <h3>Выбор товара</h3>
+                            <h3 class="visually-hidden">Выбор товара</h3>
                             <button class="buy" type="button">Купить</button>
                             <button class="bookmark" type="button">В закладки</button>
                             <h3 class="product-name">Перфоратор BOSCH BFG 6000</h3>
@@ -235,7 +237,7 @@
                     </li>
                     <li class="catalog-product-item">
                         <section>
-                            <h3>Карточка товара</h3>
+                            <h3 class="visually-hidden">Карточка товара</h3>
                             <a href="">
                                 <h3 class="product-name">Перфоратор BOSCH BFG 6000</h3>
                                 <img src="img/products/bosh6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
@@ -245,7 +247,7 @@
                             </a>
                         </section>
                         <section>
-                            <h3>Выбор товара</h3>
+                            <h3 class="visually-hidden">Выбор товара</h3>
                             <button class="buy" type="button">Купить</button>
                             <button class="bookmark" type="button">В закладки</button>
                             <h3>Перфоратор BOSCH BFG 6000</h3>
@@ -255,7 +257,7 @@
                     </li>
                     <li class="catalog-product-item">
                         <section>
-                            <h3>Карточка товара</h3>
+                            <h3 class="visually-hidden">Карточка товара</h3>
                             <a href="">
                                 <h3 class="product-name">Перфоратор BOSCH BFG 2000</h3>
                                 <img src="img/products/bosh2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
@@ -264,7 +266,7 @@
                             </a>
                         </section>
                         <section>
-                            <h3>Выбор товара</h3>
+                            <h3 class="visually-hidden">Выбор товара</h3>
                             <button class="buy" type="button">Купить</button>
                             <button class="bookmark" type="button">В закладки</button>
                             <h3 class="product-name">Перфоратор BOSCH BFG 2000</h3>
@@ -273,7 +275,7 @@
                     </li>
                     <li class="catalog-product-item">
                         <section>
-                            <h3>Карточка товара</h3>
+                            <h3 class="visually-hidden">Карточка товара</h3>
                             <a href="">
                                 <h3 class="product-name">Перфоратор BOSCH BFG 3000</h3>
                                 <img src="img/products/bosh3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
@@ -283,7 +285,7 @@
                             </a>
                         </section>
                         <section>
-                            <h3>Выбор товара</h3>
+                            <h3 class="visually-hidden">Выбор товара</h3>
                             <button class="buy" type="button">Купить</button>
                             <button class="bookmark" type="button">В закладки</button>
                             <h3 class="product-name">Перфоратор BOSCH BFG 6000</h3>
@@ -293,7 +295,7 @@
                     </li>
                     <li class="catalog-product-item">
                         <section>
-                            <h3>Карточка товара</h3>
+                            <h3 class="visually-hidden">Карточка товара</h3>
                             <a href="">
                                 <h3 class="product-name">Перфоратор BOSCH BFG 6000</h3>
                                 <img src="img/products/bosh6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
@@ -303,7 +305,7 @@
                             </a>
                         </section>
                         <section>
-                            <h3>Выбор товара</h3>
+                            <h3 class="visually-hidden">Выбор товара</h3>
                             <button class="buy" type="button">Купить</button>
                             <button class="bookmark" type="button">В закладки</button>
                             <h3 class="product-name">Перфоратор BOSCH BFG 6000</h3>
@@ -313,7 +315,7 @@
                     </li>
                     <li class="catalog-product-item">
                         <section>
-                            <h3>Карточка товара</h3>
+                            <h3 class="visually-hidden">Карточка товара</h3>
                             <a href="">
                                 <h3 class="product-name">Перфоратор BOSCH BFG 2000</h3>
                                 <img src="img/products/bosh2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
@@ -322,7 +324,7 @@
                             </a>
                         </section>
                         <section>
-                            <h3>Выбор товара</h3>
+                            <h3 class="visually-hidden">Выбор товара</h3>
                             <button class="buy" type="button">Купить</button>
                             <button class="bookmark" type="button">В закладки</button>
                             <h3 class="product-name">Перфоратор BOSCH BFG 2000</h3>
@@ -350,7 +352,7 @@
         </ul>
         </section>
         <section class="description-catalog">
-            <h2>Общее описаниие интсрумента</h2>
+            <h2 class="visually-hidden">Общее описаниие интсрумента</h2>
             <h3 class="title">ПАРА СЛОВ О ПЕРФОРАТОРАХ</h3>
             <div class="description">
                 <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.</p>
@@ -388,7 +390,7 @@
                 </nav>
             </section>
             <section class="section-promo-nav">
-                <!-- <h2>Дополнительное меню</h2> -->
+                <h2 class="visually-hidden">Дополнительное меню</h2>
                 <div>
                     <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                     <p>+7 (812) 555-05-55</p>
@@ -449,7 +451,7 @@
         </div>
     </footer>
     <section>
-        <h2>Модальное окно добавления товара в корзину</h2>
+        <h2 class="visually-hidden">Модальное окно добавления товара в корзину</h2>
         <button type="button">Закрыть</button>
         <p class="message">Товар добавлен в козину!</p>
         <div>
