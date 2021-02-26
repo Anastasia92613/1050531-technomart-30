@@ -1288,8 +1288,7 @@ header {
     list-style: none;
     color: var(--basic-white);
     grid-column: 3/4;
-    grid-row: 3/4;
-    margin-top: -61px;
+    grid-row: 2/4;
 }
 
 .promo-sale {
