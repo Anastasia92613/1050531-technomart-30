@@ -2512,6 +2512,7 @@
         box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
         bottom: 220px;
         left: -10px;
+        display: none;
     }
 
     .modal-map iframe {
