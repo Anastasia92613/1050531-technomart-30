@@ -80,7 +80,6 @@
         width: 1px;
         height: 1px;
         margin: -1px;
-        /* отрицательный марджин */
         border: 0;
         padding: 0;
         white-space: nowrap;
@@ -283,7 +282,7 @@
     .catalog-title {
         grid-column: 1/-1;
         background-color: var(--light-grayish-blue);
-        padding: 29px 739px 30px 29px;
+        padding: 30px 739px 30px 29px;
         margin-bottom: 20px;
     }
 
@@ -297,7 +296,7 @@
         padding: 0;
         margin: 0;
         padding-left: 23px;
-        padding-top: 20px;
+        padding-top: 22px;
     }
     /* Slider */
 
@@ -453,7 +452,7 @@
         line-height: 18px;
         text-transform: uppercase;
         padding-left: 19px;
-        margin-top: 8px;
+        margin-top: 9px;
     }
 
     .sorting-list {
@@ -617,7 +616,7 @@
     }
 
     .item-name-filter {
-        margin-top: 22px;
+        margin-top: 23px;
         margin-bottom: 20px;
         margin-left: 36px;
     }
@@ -910,10 +909,6 @@
         padding: 45px 0 41px 0;
     }
 
-    .center-wrapper-header div {
-        width: calc(100% / 3);
-    }
-
     .descrition-text {
         font-style: italic;
         font-weight: normal;
@@ -934,7 +929,7 @@
         flex-direction: column;
         margin: 0;
         padding: 0;
-        margin-left: 7px;
+        margin-left: 90px;
     }
 
     .header-phone {
@@ -952,10 +947,6 @@
         padding-left: 73px;
         color: var(--bright-red);
         border: 3px solid #FFFFFF;
-    }
-
-    .header-phone.phone-catalog {
-        margin-right: 30px;
     }
 
     .header-phone::before {
@@ -979,7 +970,7 @@
         margin: 0;
         padding: 0;
         margin-top: 1px;
-        margin-left: 11px;
+        margin-left: 13px;
     }
 
     .authorization {
@@ -992,10 +983,12 @@
         display: flex;
         position: relative;
         justify-content: flex-end;
+        margin-left: 72px;
+        margin-top: 1px;
     }
 
     .authorization.authorization-authorized {
-        margin-left: 21px;
+        margin-left: 54px;
     }
 
     .login-name {
@@ -1073,21 +1066,21 @@
         font-weight: normal;
         font-size: 16px;
         line-height: 18px;
-        color: var(--desaturated-blue);
-        margin-top: 8px;
+        margin-top: 7px;
         position: relative;
-        margin-left: 66px;
+        margin-left: 98px;
     }
 
     .personal-account a {
-        margin-right: 27px;
+        margin-right: 29px;
+        color: var(--desaturated-blue);
     }
 
     .personal-account::after {
         content: "";
         position: absolute;
-        top: 6px;
-        left: 88px;
+        top: 8px;
+        left: 89px;
         width: 4px;
         height: 4px;
         background-color: #000000;
@@ -1417,7 +1410,7 @@
         line-height: 18px;
         text-transform: uppercase;
         padding-top: 10px;
-        padding-bottom: 10px;
+        padding-bottom: 9px;
         width: 220px;
         box-sizing: border-box;
         border: 1px solid var(--light-light-gray);
@@ -1989,7 +1982,7 @@
         margin: 0;
         padding: 0;
         margin-top: 26px;
-        padding-bottom: 55px;
+        padding-bottom: 69px;
     }
 
     .service-item label {
@@ -2070,7 +2063,7 @@
 
     .bread-crumbs {
         grid-column: 1/-1;
-        margin-top: 20px;
+        margin-top: 22px;
         margin-bottom: 20px;
     }
 
@@ -2118,13 +2111,14 @@
         height: 12px;
         background-image: url(../img/icon/icon-home.svg);
         background-repeat: no-repeat;
+        top: 3px;
     }
 
     .bread-crumbs-item::after {
         content: "";
         position: absolute;
-        top: 2px;
-        right: -25px;
+        top: 3px;
+        right: -26px;
         width: 8px;
         height: 12px;
         background-image: url(../img/icon/icon-right-small.svg);
@@ -2214,7 +2208,7 @@
     }
 
     .bottom-nav-item:not(:last-child) {
-        margin-right: 58px;
+        margin-right: 59px;
     }
 
     .bottom-nav-item a {
@@ -2240,7 +2234,7 @@
         margin: 0;
         padding: 0;
         display: flex;
-        margin-top: 23px;
+        margin-top: 22px;
     }
 
     .promo-nav-item {
@@ -2522,6 +2516,7 @@
     }
 
     .section-message {
+        display: none;
         width: 620px;
         height: 283px;
         background-color: var(--basic-white);
