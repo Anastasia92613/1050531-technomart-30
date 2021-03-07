@@ -3,15 +3,16 @@ const messagePopup = document.querySelector(".form-letter");
 const messageClose = messagePopup.querySelector(".modal-close");
 const messageForm = messagePopup.querySelector(".message-form");
 const loginName = messagePopup.querySelector(".input-name-login");
-const loginEmail = messagePopup.querySelector(".input-name-login");
+const loginEmail = messagePopup.querySelector(".input-name-email");
 const message = messagePopup.querySelector(".message-text");
 
 let isStorageSupport = true;
-let storage = "";
+let storageLogin = "";
+let storageEmail = "";
 
 try {
-    storage = localStorage.getItem("login");
-    storage = localStorage.getItem("email");
+    storageLogin = localStorage.getItem("login");
+    storageEmail = localStorage.getItem("email");
 } catch (err) {
     isStorageSupport = false;
 }
@@ -19,16 +20,17 @@ try {
 messageLink.addEventListener("click", function(evt) {
     evt.preventDefault();
     messagePopup.classList.add("modal-show");
+    if (storageLogin || storageEmail) {
+        loginName.value = storageLogin;
+        loginEmail.value = storageEmail;
+        message.focus();
+    } else {
+        loginName.focus();
+
+    }
 
 });
-if (storage) {
-    loginName.value = storage;
-    loginEmail.value = storage;
-    message.focus();
-} else {
-    loginName.focus();
 
-}
 messageClose.addEventListener("click", function(evt) {
     evt.preventDefault();
     messagePopup.classList.remove("modal-show");

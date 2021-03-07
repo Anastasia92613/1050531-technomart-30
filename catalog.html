@@ -8,7 +8,7 @@
     <link rel="icon" href="img/icon/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/icon/favicon.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cuprum:wght@400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap">
-    <link rel="stylesheet" link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
@@ -80,8 +80,8 @@
             </div>
         </div>
     </header>
-    <main class="">
-        <container class=" page-catalog container">
+    <main>
+        <div class="page-catalog container">
             <div class="bread-crumbs">
                 <ul class="bread-crumbs-list">
                     <li class="bread-crumbs-item bread-crumbs-home">
@@ -125,8 +125,8 @@
                             </div>
                         </div>
                     </fieldset>
-                    <fieldset aria-label="Фильтр по производителям">
-                        <div class="filter-maker">
+                    <div class="filter-maker">
+                        <fieldset aria-label="Фильтр по производителям">
                             <legend class="name-filter">Производители:</legend>
                             <ul class="filter-list">
                                 <li class="filter-item item-maker">
@@ -150,10 +150,10 @@
                                     <label for="filter-Hitachi" tabindex="0">Hitachi</label>
                                 </li>
                             </ul>
-                        </div>
-                    </fieldset>
-                    <fieldset aria-label="Фильтр по виду питания инструмента">
-                        <div class="wrapper-name-filter">
+                        </fieldset>
+                    </div>
+                    <div class="wrapper-name-filter">
+                        <fieldset aria-label="Фильтр по виду питания инструмента">
                             <legend class="name-filter">Питание:</legend>
                             <ul class="filter-list">
                                 <li class="filter-item item-name-filter">
@@ -165,8 +165,8 @@
                                     <label for="network" tabindex="0">Сетевые</label>
                                 </li>
                             </ul>
-                        </div>
-                    </fieldset>
+                        </fieldset>
+                    </div>
                     <button class="buttom-catalog" type="submit" aria-label="Показать товары по выбранным фильтрам">Показать</button>
                 </form>
             </section>
@@ -340,7 +340,7 @@
                     <a href="#" aria-label="Следующая страница">Следующая</a>
                 </li>
             </ul>
-        </container>
+        </div>
         <section class="description-catalog">
             <div class="container">
                 <h2 class="visually-hidden">Общее описаниие интсрумента</h2>
@@ -357,7 +357,7 @@
         <div class="bottom-nav">
             <section class="section-bottom-nav">
                 <h2 class="visually-hidden">Нижнее меню</h2>
-                <a class="footer-logo">
+                <a class="footer-logo" href="index.html">
                     <img class="footer-logo-logo" src="img/footer-logo-background.png" width="220" height="47" alt="Логотип магазина 'ТЕХНОМАРТ'">
                 </a>
                 <nav>
