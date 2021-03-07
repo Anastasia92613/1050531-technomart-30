@@ -2342,10 +2342,19 @@
         bottom: 0;
         left: 0;
         margin: auto;
+        display: none;
+    }
+
+    .modal-show {
+        display: block;
+        animation: bounce 0.6s;
+    }
+
+    .modal-error {
+        animation: shake 0.6s;
     }
 
     .form-letter {
-        display: none;
         font-family: "Cuprum", sans-serif, Arial;
         font-style: normal;
         font-weight: normal;
@@ -2460,6 +2469,15 @@
         padding-top: 11px;
         padding-bottom: 9px;
         padding-left: 2px;
+        margin: 37px 80px;
+    }
+
+    .form-message-button:hover {
+        background-color: var(--strong-red);
+    }
+
+    .form-message-button:focus {
+        background-color: var(--strong-red);
     }
 
     .wrapper-button-form {
@@ -2496,7 +2514,6 @@
         box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
         bottom: 220px;
         left: -10px;
-        display: none;
     }
 
     .modal-map iframe {
@@ -2585,4 +2602,39 @@
         padding-bottom: 9px;
         padding-left: 32px;
         padding-right: 31px;
+    }
+
+    @keyframes bounce {
+        0% {
+            transform: translateY(-2000px);
+        }
+        70% {
+            transform: translateY(30px);
+        }
+        90% {
+            transform: translateY(-10px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes shake {
+        0%,
+        100% {
+            transform: translateX(0);
+        }
+        10%,
+        30%,
+        50%,
+        70%,
+        90% {
+            transform: translateX(-10px);
+        }
+        20%,
+        40%,
+        60%,
+        80% {
+            transform: translateX(10px);
+        }
     }
