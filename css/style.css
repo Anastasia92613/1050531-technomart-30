@@ -33,7 +33,7 @@
         --grayish-magenta: #eec9ec;
         --pale-orange: #ffe0a5;
         --blue: #D7DCDE;
-        --strong-cyan: #00ca74;
+        --strong-cyan: #5FBB2D;
         --mini-gray: #ababab;
         --light-light-gray: #e5e5e5;
         --dark-dark-green: #367315;
@@ -105,7 +105,7 @@
         column-gap: 120px;
         width: 940px;
         margin: 0 auto;
-        padding-bottom: 69px;
+        padding-bottom: 72px;
     }
 
     .about-company {
@@ -381,7 +381,7 @@
         cursor: pointer;
     }
 
-    .slider-controls .current {
+    .slider-controls .active-button {
         background-color: var(--bright-red);
     }
 
@@ -1437,9 +1437,10 @@
     }
 
     .wrapper-bottom {
-        display: flex;
+        display: none;
         flex-direction: column;
         width: 135px;
+        box-sizing: border-box;
         order: 0;
         margin: 0;
         padding: 0;
@@ -1462,7 +1463,6 @@
         padding: 9px 12px 8px 25px;
         margin-bottom: 11px;
         position: relative;
-        border-radius: 0.4;
     }
 
     .buy::before {
@@ -1477,7 +1477,7 @@
         opacity: 0.3;
     }
 
-    .buy svg:hover {
+    .buy:hover {
         background-color: var(--strong-green);
         border: none;
     }
@@ -1564,9 +1564,15 @@
     .img-bosh-3000 {
         width: 127px;
         height: 112px;
-        margin-top: 20px;
-        margin-left: 23px;
-        margin-bottom: 30px;
+        margin-top: 22px;
+        margin-left: 19px;
+        margin-bottom: 37px;
+    }
+
+    .img-bosh-9000 {
+        width: 184px;
+        height: 164px;
+        margin-bottom: 7px;
     }
 
     .img-bosh-6000 {
@@ -1574,15 +1580,15 @@
         height: 128px;
         margin-top: 15px;
         margin-left: 15px;
-        margin-bottom: 19px;
+        margin-bottom: 27px;
     }
 
     .img-bosh-2000 {
         width: 127px;
         height: 112px;
-        margin-top: 20px;
-        margin-left: 20px;
-        margin-bottom: 30px;
+        margin-top: 22px;
+        margin-left: 19px;
+        margin-bottom: 37px;
     }
 
     .popular-product-list {
@@ -1633,16 +1639,6 @@
         height: 50%;
         transform: translateY(-2px);
     }
-    /*
-.delite {
-    position: relative;
-}
-
-.delite::before {
-    position: absolute;
-    content: "";
-    top: 10px;
-} */
 
     .one-active {
         margin-top: 49px;
@@ -1657,10 +1653,26 @@
         padding-top: 6px;
         padding-left: 18px;
         padding-right: 18px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .popular-product-item a {
+        order: 1;
+        display: flex;
+        flex-direction: column;
     }
 
     .popular-product-item:hover {
         box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .popular-product-item:hover .cart-img {
+        display: none;
+    }
+
+    .popular-product-item:hover .wrapper-bottom {
+        display: flex;
     }
 
     .new-cart-3000 {
@@ -1668,10 +1680,6 @@
         position: absolute;
         top: 0;
         right: 0;
-    }
-
-    .item-2000 {
-        position: relative;
     }
 
     .new-cart-2000 {
@@ -1748,6 +1756,14 @@
 
     .catalog-product-item:hover {
         box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .catalog-product-item:hover .cart-img {
+        display: none;
+    }
+
+    .catalog-product-item:hover .wrapper-bottom {
+        display: flex;
     }
 
     .catalog-product-item:nth-child(3n) {
@@ -2039,14 +2055,18 @@
         position: relative;
     }
 
-    .title-delivery {
+    .service-none {
+        display: none;
+    }
+
+    .title-service {
         margin: 0;
         padding: 0;
         padding-top: 54px;
         padding-left: 8px;
     }
 
-    .description-delivery {
+    .description-delivery-text {
         padding-top: 30px;
         padding-left: 7px;
     }
@@ -2055,6 +2075,35 @@
         position: absolute;
         right: 0;
         top: 76px;
+    }
+
+    .description-guarantee-text {
+        padding-top: 24px;
+        padding-left: 7px;
+    }
+
+    .img-guarantee {
+        position: absolute;
+        right: -10px;
+        top: 52px;
+    }
+
+    .description-credit-text {
+        padding-top: 28px;
+        padding-left: 7px;
+    }
+
+    .img-credit {
+        position: absolute;
+        right: -10px;
+        top: 52px;
+    }
+
+    .button-credit {
+        padding: 10px 45px;
+        border-radius: 3px;
+        margin-top: 27px;
+        margin-left: 8px;
     }
 
     .label-service {
@@ -2539,7 +2588,6 @@
     }
 
     .section-message {
-        display: none;
         width: 620px;
         height: 283px;
         background-color: var(--basic-white);
