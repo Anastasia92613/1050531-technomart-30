@@ -2592,7 +2592,7 @@
         height: 283px;
         background-color: var(--basic-white);
         position: fixed;
-        top: 651px;
+        top: calc(50%-310px);
         left: 33px;
     }
 
