@@ -9,10 +9,6 @@ buyProduct.forEach(function(button) {
     });
 });
 
-// buyProduct.addEventListener("click", function(evt) {
-//     evt.preventDefault();
-//     modalBuy.classList.add("modal-show");
-// });
 
 modalClose.addEventListener("click", function(evt) {
     evt.preventDefault();
