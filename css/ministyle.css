@@ -615,7 +615,7 @@ img {
 .filter-maker::before {
     content: "";
     position: absolute;
-    background-image: url(../img/lineFilter.svg);
+    background-image: url(../img/linefilter.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
     width: 220px;
@@ -625,7 +625,7 @@ img {
 
 .filter-input-checkbox:checked+label::after,
 .filter-input-checkbox:disabled+label::after {
-    background-image: url(../img/icon/Shape.svg);
+    background-image: url(../img/icon/shape.svg);
     background-repeat: no-repeat;
     background-position: 0 0
 }
@@ -1642,7 +1642,7 @@ img {
     content: "";
     width: 141px;
     height: 38px;
-    background-image: url(../img/Shape.svg);
+    background-image: url(../img/shape.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
     position: absolute;
@@ -1681,7 +1681,7 @@ img {
 .wrapper-name-filter::before {
     content: "";
     position: absolute;
-    background-image: url(../img/lineFilter.svg);
+    background-image: url(../img/linefilter.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
     width: 220px;
