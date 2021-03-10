@@ -350,7 +350,7 @@ p {
 
 .wrapper-1 {
     background-color: var(--light-gray);
-    background-image: url(../img/layer.jpg);
+    background-image: url(../img/perforator-img.jpg);
 }
 
 .wrapper-2 {
@@ -632,7 +632,7 @@ p {
 .filter-maker::before {
     content: "";
     position: absolute;
-    background-image: url(../img/linefilter.svg);
+    background-image: url(../img/line-filter.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
     width: 220px;
@@ -694,7 +694,7 @@ p {
     left: -32px;
     width: 21px;
     height: 17px;
-    background-image: url(../img/icon/shape.svg);
+    background-image: url(../img/icon/check-mark.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
 }
@@ -718,7 +718,7 @@ p {
     left: -32px;
     width: 21px;
     height: 17px;
-    background-image: url(../img/icon/shape.svg);
+    background-image: url(../img/icon/check-mark.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
     opacity: 0.4;
@@ -1681,7 +1681,7 @@ p {
     content: "";
     width: 141px;
     height: 38px;
-    background-image: url(../img/shape.svg);
+    background-image: url(../img/background-price.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
     position: absolute;
